@@ -1,0 +1,392 @@
+<div>
+  <style>.metric_box {
+}
+
+.metric_box a {
+  text-decoration:none;
+  color: darkblue;
+}
+
+.metric_box .title {
+  font-weight: bold;
+}
+
+.metric_box .section {
+  margin: 5px 5px 5px 5px;
+}
+
+.metric_box .grid {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  grid-template-rows: auto;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+
+.metric_box .grid > div {
+}
+
+.metric_box .grid > div:nth-child(odd) {
+  font-weight: bold;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.metric_box .grid > div:nth-child(even) {
+  padding-right: 20px;
+}
+
+.metric_box .complex {
+  display: inline-block;
+  margin: 15px 20px 0px 0px;
+  vertical-align: top;
+}
+
+.metric_box .complex .key {
+  font-weight: bold;
+}
+
+.metric_box .complex .value {
+}
+
+.metric_box .confusion_matrix {
+  border-collapse: collapse;
+  margin: 15px 15px;
+  border: 1px solid lightgray;
+}
+
+.metric_box .confusion_matrix th {
+  background-color: #ededed;
+  font-weight: bold;
+  text-align: left;
+  padding: 5px;
+  border: 1px solid lightgray;
+}
+
+.metric_box .confusion_matrix td {
+  text-align: right;
+  padding: 3px;
+  border: 1px solid lightgray;
+}
+</style>
+  <div class="metric_box">
+    <div class="grid section">
+      <div class="key">RMSE:</div>
+      <div class="value">261.161</div>
+      <div class="key">
+        <a href="https://ydf.readthedocs.io/en/latest//glossary#number-of-examples" target="_blank">num examples:</a>
+      </div>
+      <div class="value">3054348</div>
+      <div class="key">
+        <a href="https://ydf.readthedocs.io/en/latest//glossary#weighted-number-of-examples" target="_blank">num examples (weighted):</a>
+      </div>
+      <div class="value">3054348</div>
+    </div>
+    <div class="complex">
+      <div class="key"/>
+      <div class="value">
+<div style='display: grid; gap: 0px; grid-auto-columns: min-content;'><div style='grid-row:1 / span 1; grid-column:1 / span 1;'><script src='https://www.gstatic.com/external_hosted/plotly/plotly.min.js'></script>
+<div id="chart_1224_6b45_de0d_74e3" style="display: inline-block;" ></div>
+<script>
+  Plotly.newPlot(
+    'chart_1224_6b45_de0d_74e3',
+    [{
+x: [-7691.77,-4457.5,-1223.23,2011.04,5245.31,8479.58,11713.8,14948.1,18182.4,21416.7,24650.9,27885.2,31119.5,34353.7,37588,40822.3,44056.5,47290.8,50525.1,53759.3,56993.6,60227.9,63462.2,66696.4,69930.7,73165,76399.2,79633.5,82867.8,86102,89336.3,92570.6,95804.9,99039.1,102273,105508,108742,111976,115210,118444],
+y: [15,333,2.99394e+06,59095,770,118,33,14,6,2,4,4,3,2,3,0,1,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1],
+type: 'bar',
+},
+],
+    {
+      width: 500,
+      height: 400,
+      title: 'Residual Histogram',
+      showlegend: false,
+      xaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Residual',
+        },
+      font: {
+        size: 10,
+        },
+      yaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Density',
+        },
+      margin: {
+        l: 50,
+        r: 50,
+        b: 50,
+        t: 50,
+      },
+    },
+    {
+      modeBarButtonsToRemove: ['sendDataToCloud'],
+      displaylogo: false,displayModeBar: false,
+    }
+  );
+</script>
+</div><div style='grid-row:1 / span 1; grid-column:2 / span 1;'>
+<div id="chart_88d0_20ca_81cc_fc9a" style="display: inline-block;" ></div>
+<script>
+  Plotly.newPlot(
+    'chart_88d0_20ca_81cc_fc9a',
+    [{
+x: [1558.97,4676.92,7794.88,10912.8,14030.8,17148.7,20266.7,23384.6,26502.6,29620.5,32738.5,35856.4,38974.4,42092.3,45210.3,48328.2,51446.2,54564.1,57682.1,60800,63918,67035.9,70153.9,73271.8,76389.8,79507.7,82625.7,85743.6,88861.6,91979.5,95097.5,98215.4,101333,104451,107569,110687,113805,116923,120041,123159],
+y: [2.96756e+06,63035,16064,4999,1963,541,127,27,6,6,5,3,3,0,2,0,0,2,0,0,1,0,0,0,1,0,0,0,3,0,0,0,0,0,0,0,0,0,0,1],
+type: 'bar',
+},
+],
+    {
+      width: 500,
+      height: 400,
+      title: 'Ground Truth Histogram',
+      showlegend: false,
+      xaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Ground truth',
+        },
+      font: {
+        size: 10,
+        },
+      yaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Density',
+        },
+      margin: {
+        l: 50,
+        r: 50,
+        b: 50,
+        t: 50,
+      },
+    },
+    {
+      modeBarButtonsToRemove: ['sendDataToCloud'],
+      displaylogo: false,displayModeBar: false,
+    }
+  );
+</script>
+</div><div style='grid-row:2 / span 1; grid-column:1 / span 1;'>
+<div id="chart_8619_86fa_ad20_6403" style="display: inline-block;" ></div>
+<script>
+  Plotly.newPlot(
+    'chart_8619_86fa_ad20_6403',
+    [{
+x: [-815.172,122.583,1060.34,1998.09,2935.85,3873.6,4811.36,5749.11,6686.87,7624.62,8562.38,9500.13,10437.9,11375.6,12313.4,13251.2,14188.9,15126.7,16064.4,17002.2,17939.9,18877.7,19815.4,20753.2,21690.9,22628.7,23566.5,24504.2,25442,26379.7,27317.5,28255.2,29193,30130.7,31068.5,32006.3,32944,33881.8,34819.5,35756.8],
+y: [5354,2.63912e+06,218003,72172,46228,27561,15220,9335,6292,4463,3158,2025,1409,1222,881,646,478,323,232,111,56,25,16,5,5,4,1,1,1,0,2,0,1,0,1,0,1,0,0,1],
+type: 'bar',
+},
+],
+    {
+      width: 500,
+      height: 400,
+      title: 'Prediction Histogram',
+      showlegend: false,
+      xaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Prediction',
+        },
+      font: {
+        size: 10,
+        },
+      yaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Density',
+        },
+      margin: {
+        l: 50,
+        r: 50,
+        b: 50,
+        t: 50,
+      },
+    },
+    {
+      modeBarButtonsToRemove: ['sendDataToCloud'],
+      displaylogo: false,displayModeBar: false,
+    }
+  );
+</script>
+</div><div style='grid-row:2 / span 1; grid-column:2 / span 1;'>
+<div id="chart_15b0_9363_6e86_561f" style="display: inline-block;" ></div>
+<script>
+  Plotly.newPlot(
+    'chart_15b0_9363_6e86_561f',
+    [{
+x: [0,124717],
+y: [0,124717],
+type: 'scatter',
+mode: 'lines',
+line: {
+  dash: 'dot',
+  width: 1
+},
+},
+{
+x: [0,3117.93,6235.85,9353.78,12471.7,15589.6,18707.6,21825.5,24943.4,28061.3,31179.2,34297.2,37415.1,43650.9,53004.7,62358.5,74830.2,87301.9,121599],
+y: [215.53,4087.92,7061.9,9985.07,12688.7,14783,16041,16575.8,14691.8,15563.8,6444.79,7179.98,5464.19,10917.9,18349.8,17715.1,32983.6,20342,4656.12],
+type: 'scatter',
+mode: 'lines',
+line: {
+  dash: 'solid',
+  width: 1
+},
+},
+],
+    {
+      width: 500,
+      height: 400,
+      title: 'Ground Truth vs Predictions',
+      showlegend: false,
+      xaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Ground truth',
+        },
+      font: {
+        size: 10,
+        },
+      yaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Prediction',
+        },
+      margin: {
+        l: 50,
+        r: 50,
+        b: 50,
+        t: 50,
+      },
+    },
+    {
+      modeBarButtonsToRemove: ['sendDataToCloud'],
+      displaylogo: false,displayModeBar: false,
+    }
+  );
+</script>
+</div><div style='grid-row:3 / span 1; grid-column:1 / span 1;'>
+<div id="chart_c3bf_ed26_0e97_71d0" style="display: inline-block;" ></div>
+<script>
+  Plotly.newPlot(
+    'chart_c3bf_ed26_0e97_71d0',
+    [{
+x: [0,3117.93,6235.85,9353.78,12471.7,15589.6,18707.6,21825.5,24943.4,28061.3,31179.2,34297.2,37415.1,43650.9,53004.7,62358.5,74830.2,87301.9,121599],
+y: [-8.54222,157.338,450.621,683.112,1076.36,2014.72,3935.8,6614.98,11058,14126.9,25634.9,28616,33298.8,34898.1,35524.2,45718.9,43106.4,67809.2,120061],
+type: 'scatter',
+mode: 'lines',
+line: {
+  dash: 'solid',
+  width: 1
+},
+},
+],
+    {
+      width: 500,
+      height: 400,
+      title: 'Predictions vs Residual',
+      showlegend: false,
+      xaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Prediction',
+        },
+      font: {
+        size: 10,
+        },
+      yaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Residual',
+        },
+      margin: {
+        l: 50,
+        r: 50,
+        b: 50,
+        t: 50,
+      },
+    },
+    {
+      modeBarButtonsToRemove: ['sendDataToCloud'],
+      displaylogo: false,displayModeBar: false,
+    }
+  );
+</script>
+</div><div style='grid-row:3 / span 1; grid-column:2 / span 1;'>
+<div id="chart_7ffd_fc5a_5016_d4ac" style="display: inline-block;" ></div>
+<script>
+  Plotly.newPlot(
+    'chart_7ffd_fc5a_5016_d4ac',
+    [{
+x: [-1284.05,-346.319,591.411,1529.14,2466.87,3404.6,4342.33,5280.06,6217.79,7155.52,8093.25,9030.98,9968.71,10906.4,11844.2,12781.9,13719.6,14657.4,15595.1,16532.8,17470.6,18408.3,19346,20283.7,21221.5,22159.2,23096.9,24034.7,24972.4,26847.9,28723.3,30598.8,32474.2,35287.4],
+y: [479.428,-1.62093,-33.1249,-10.3309,24.5945,64.1817,76.5124,122.395,251.368,227.154,123.951,203.904,162.637,92.7913,215.956,158.795,180.81,145.511,196.179,807.016,1591.51,1342.04,1352.15,1661.82,-469.888,183.975,-5741.08,156.996,-7594.65,25534.9,625.615,56550.6,43106.4,-7032.15],
+type: 'scatter',
+mode: 'lines',
+line: {
+  dash: 'solid',
+  width: 1
+},
+},
+],
+    {
+      width: 500,
+      height: 400,
+      title: 'Ground Truth vs Residual',
+      showlegend: false,
+      xaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Ground truth',
+        },
+      font: {
+        size: 10,
+        },
+      yaxis: {
+        ticks: 'outside',
+        showgrid: true,
+        zeroline: false,
+        showline: true,
+        title: 'Residual',
+        },
+      margin: {
+        l: 50,
+        r: 50,
+        b: 50,
+        t: 50,
+      },
+    },
+    {
+      modeBarButtonsToRemove: ['sendDataToCloud'],
+      displaylogo: false,displayModeBar: false,
+    }
+  );
+</script>
+</div></div>      </div>
+    </div>
+  </div>
+</div>
